@@ -23,12 +23,11 @@ It includes two backend servers and one client implementing **round-robin load b
 ---
 
 ## UML Diagrams
-
-### Component Diagram
-
+###  Component Diagram
+![Component Diagram](images/component-diagram.png)
 
 ### Sequence Diagram
-
+![Sequence Diagram](images/sequence-diagram.png)
 
 
 ## Explanation & Principles
@@ -68,12 +67,6 @@ The client alternates between two server endpoints using a **round-robin** appro
    ```bash
    mvn exec:java -Dexec.mainClass="com.wejden.grpc.weather.weatherClient"
    ```
-
----
-
-## ✅ Result
-
-Requests alternate between both servers, proving that **client-side load balancing** works correctly using gRPC.
 
 
 
